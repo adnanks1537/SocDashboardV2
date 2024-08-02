@@ -1,0 +1,35 @@
+.card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #0b0b0b, -5px -5px 10px #232323;
+    padding: 20px;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 200px; /* Minimum width for cards */
+    max-width: 100%;  /* Allow cards to be flexible */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 20px #0b0b0b, -10px -10px 20px #232323;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #00ffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Stack contents vertically */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .card h2 {
+        font-size: 1.2em; /* Smaller heading font size on mobile */
+    }
+}
